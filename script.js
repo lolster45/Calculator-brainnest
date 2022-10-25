@@ -13,8 +13,12 @@ numberContainer.addEventListener("click", (e) => {
   const displayedNumber = display.textContent;
   const prevValue = display.textContent;
 
-  console.log(display.textContent.length)
-  if (display.textContent.length > 7) {
+  if (display.textContent.length > 9) {
+    alert("Maximum characters reached!")
+    return
+  };
+
+  if (display.textContent.length > 6) { 
     display.style.fontSize = "38px" 
     display.innerHTML = `${display.textContent} Hello` 
   }
@@ -56,6 +60,7 @@ operatorsCont.addEventListener("click", (e) => {
   const element = e.target.textContent;
   const previousVal = display.textContent[display.textContent.length - 1];
   const oprts = ["+","-","*","/"]
+
 
   if (display.textContent === "0") { //Makes it not possible to have operator as first value
     return; 
