@@ -1,0 +1,188 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body {
+  background: #F55D3E;
+  padding: 0 24px;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#calc { 
+  position: absolute;
+  z-index: 0;
+  background-color: #2D2D34;
+  border-radius: 10px;
+  transform: translateY(-27px);
+  height: 460px;
+  width: 300px;
+}
+
+#display {
+  position: relative;
+  z-index: 2;
+  word-wrap: break-word;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  min-height: 75px;
+  width: 271.5px;
+  background-color: white; 
+  color: black;
+  font-size: 60px;
+  padding-right: 5px;
+  margin-bottom: 15px;
+  transform: translate(14px, 13px);
+}
+#number-container {
+  display: grid;
+  height: fit-content;
+  margin-top: 70px;
+  grid-template-columns: repeat(3, 70px);
+  grid-template-rows: repeat(4, 70px);
+  transform: translate(10px, 10px);
+  
+}
+
+#btn-holder {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  gap: 10px;
+  background-color: #2D2D34;
+}
+.integer {
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid;
+  color: white;
+  height: 60px;
+  width: 60px;
+  transform: translate(7.5px);
+}
+.integer:hover {
+  background-color: rgb(63, 61, 61);
+}
+#operators-cont {
+  margin-top: 73px;
+  transform: translate(12px);
+}
+
+#operators-cont > button {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 7px;
+  margin-right: 7px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  color: black;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+#operators-cont > button:nth-child(1) {
+  background-color: transparent;
+  color: white;
+  transform: translate(-220px,-56px);
+  border: 1px solid white;
+  position: absolute;
+  left: 10px;
+}
+#historyBtn {
+  position: relative;
+  z-index: 6;
+  transform: translate(-73px, -126px);
+  border-radius: 90px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  width: 130px;
+  height: 50px;
+  left: 77px;
+}
+#equal {
+  position: absolute;
+  cursor: pointer;
+  z-index: 15;
+  transform: translate(107px, 160px);
+  border-radius: 50%;
+  border: none;
+  height: 50px;
+  width: 50px;
+  background-color: #F55D3E;
+  color: white;
+}
+#operators-cont > button:hover {
+  background-color: rgb(254, 66, 66);
+}
+
+.history {
+  position: absolute;
+  z-index: 1;
+  transform: translate(-230px, -30px);
+  overflow-y: scroll;
+  right: 30px;
+  height: 0px;
+  width: 260px;  
+  list-style: none;
+  background-color: #2D2D34;
+  color: white; 
+  transition: all 0.3s ease;
+}
+#hist-display {
+  margin-top: 25px;
+}
+.history > button {
+  position: fixed;
+  z-index: 10;
+  cursor: pointer;
+  transform: translate(190px);
+  background-color: #F55D3E;
+  color: white;
+  padding: 5px;
+  border: none;
+}
+.history > li {
+  color: white;
+  background-color: aqua;
+  margin-bottom: 5px;
+}
+.history.active {
+  z-index: 10;
+  height: 270px;
+  padding: 10px;
+}
+#backspace {
+  position: absolute;
+  cursor: pointer;
+  z-index: 5;
+  border: none;
+  transform: translate(107px, -126px);
+  font-size: 23px;
+  margin-bottom: 0px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+#negative {
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid;
+  color: white;
+  height: 60px;
+  width: 60px;
+  transform: translate(40px, 153px);
+
+}

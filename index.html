@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+  </head>
+  <body> 
+    <section id="calc">
+      <div id="display">0</div>
+      <div id="btn-holder">
+        <div id="number-container">  
+          <button class="integer">7</button>
+          <button class="integer">8</button>
+          <button class="integer">9</button>
+          <button class="integer">4</button>
+          <button class="integer">5</button>
+          <button class="integer">6</button> 
+          <button class="integer">1</button>
+          <button class="integer">2</button>
+          <button class="integer">3</button>
+          <button class="integer" data-action="decimal">.</button>
+          <button class="integer">0</button>
+        </div>
+        <div id="operators-cont">
+          <button id="clear" class="clear">AC</button>
+          <button data-action="add">+</button>
+          <button data-action="subtract">-</button>
+          <button data-action="multiply">*</button>
+          <button data-action="divide">/</button>
+        </div>
+      </div>
+    </section>
+    <div class="history">
+      <button id="erase">Erase..</button>
+      <div id="hist-display"></div>
+    </div>
+    <button id="historyBtn" class="clear">History</button>
+    <button id="backspace" class="clear">←</button>
+    <button id="equal" class="symbol" data-action="equals">=</button>
+    <button id="negative" class="integer">+/-</button>
+  </body>
+</html>
