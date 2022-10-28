@@ -4,37 +4,37 @@
   box-sizing: border-box;
 }
 body {
-display: flex;
-height: 100vh;
-background: #F55D3E;
-justify-content: center;
-align-items: center;
+  display: flex;
+  height: 100vh;
+  background: #F55D3E;
+  justify-content: center;
+  align-items: center;
 }
 #calculator-body {
-position: relative;
-background-color: #2D2D34;
-padding: 10px;
-height: 340px;
-width: 250px;
+  position: relative;
+  background-color: #2D2D34;
+  padding: 10px;
+  height: 340px;
+  width: 250px;
 }
 #display {
-display: flex;
-font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-align-items: center;
-justify-content: end;
-padding-right: 5px;
-font-size: 30px;
-height: 50px;
-width: 100%;
-background-color: white;
+  display: flex;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  align-items: center;
+  justify-content: end;
+  padding-right: 5px;
+  font-size: 30px;
+  height: 50px;
+  width: 100%;
+  background-color: white;
 }
 #btn-holder {
-display: grid;
-transform: translateY(10px);
-grid-template-columns: repeat(4, 57.7px);
-grid-template-rows: repeat(5, 50px);
-background-color: transparent;
-height: 180px;
+  display: grid;
+  transform: translateY(10px);
+  grid-template-columns: repeat(4, 57.7px);
+  grid-template-rows: repeat(5, 50px);
+  background-color: transparent;
+  height: 180px;
 }
 #btn-holder > button {
   cursor: pointer;
